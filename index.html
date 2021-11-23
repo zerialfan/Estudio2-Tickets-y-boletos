@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">tiket</h1>
+    </header>
+    <main>
+        <!-- TODO: aqui va todos los  input -->
+        <form action="" class="container-input">
+            <!-- FIXME: input name -->
+            <label for="name">name</label>
+            <input class="item" type="text" id="name" placeholder="nombres completos">
+            <!-- FIXME: input origen -->
+            <label for="origen">origen</label>
+            <input class="item" type="text" id="origen" placeholder=" ciudad de  origen">
+            <!-- FIXME: input destino -->
+            <label for="destino">destino</label>
+            <input class="item" type="text" id="destino" placeholder="ciudad de destino">
+            <!-- FIXME: input time -->
+            <label for="time">time </label>
+            <input class="item" type="datetime-local" id="time">
+            <!-- FIXME: input submit -->
+            <input class="button" type="submit" value="comprar"  >
+        </form>
+        <!-- TODO: aqui van los tiket (template) -->
+        <section class="container">
+            <!-- FIXME: poner templates  -->
+        </section>
+        <section class="image">
+
+        </section>
+    </main>
+    <!-- TODO: template -->
+    <template id="template">
+        <article class="wrap-tiket">
+            <h3 class="font">name</h3>
+            <p  class="name"></p>
+            <h3 class="font"> origen</h3>
+            <p class="source"></p>
+            <h3 class="font">destino</h3>
+            <p class="destination"></p>
+            <h3 class="font">time</h3>
+            <p class="time"></p>
+            <h3 class="font">number asiento</h3>
+            <p class="seat" ></p>
+            <!-- FIXME: buttom elimina todo el template -->
+           <button class="delete" name="eliminar">delete</button>
+        </article>
+    </template>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
